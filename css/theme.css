@@ -154,8 +154,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .list {
-  margin-left: auto;
+  margin-left: 7vw;
   margin-right: auto;
+  position: fixed;
+  height: 65vh;
+  overflow: auto;
+  margin-top: 1vh;
 }
 
 .list table {
@@ -188,6 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 .backbtn{
   float:right;
   margin-right:10vw;
+  margin-top: 74vh;
 }
 
 .buttonfav{
@@ -232,7 +237,7 @@ height: 8%;
 }
 
 #crwtTable{
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 
 .homebtn{
@@ -271,8 +276,8 @@ height: 8%;
   margin-left: 2vw;
 }
 
-.alltime table{
-  margin-top:5vh;
+.alltime{
+  margin-top:7vh;
   font-size: 22px;
 }
 
@@ -281,5 +286,5 @@ height: 8%;
 }
 
 #FavoritesList{
-  margin-top:2vh;
+  margin-top:1vh;
 }
