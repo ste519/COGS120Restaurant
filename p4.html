@@ -74,6 +74,12 @@
 				}
 			}
 
+			window.onload = function(event) {
+				for(var i = 1; i <= complexData.length; i++){
+					if(localStorage.getItem(i)==null){localStorage.setItem(i,'#1ec8cd')}
+					document.getElementById(i).style.color = localStorage.getItem(i);}
+			}
+
 			</script>
 
 			<!---------------------------------------------------------------------->
@@ -89,10 +95,15 @@
 								<span id="time"> {{index}}.&nbsp&nbsp{{title}}</span>
 								<span id="wt">{{waitTime}}&nbspmin(s)</span>
 							</span>
-							<span onclick="javascript:this.style.color='#ff6868';
+							<span
+							onclick="javascript:
 							localStorage.setItem(complexData[{{index}}-1].title,
-							JSON.stringify(complexData[{{index}}-1]));"
-							id="{{index}}" class="fa buttonfav">&#xf004;</span>
+							JSON.stringify(complexData[{{index}}-1]));
+							localStorage.setItem({{index}},
+							'#ff6868');
+							this.style.color='#ff6868';"
+							id="{{index}}" class="fa buttonfav">&#xf004;
+						</span>
 						</td>
 					</tr>
 
