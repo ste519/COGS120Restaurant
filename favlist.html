@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -83,3 +84,89 @@
 		<script src="js/main.js"></script>
 	</body>
 	</html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+	<title> home </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Libraries CSS Files -->
+	<link href="lib/animate/animate.min.css" rel="stylesheet">
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+	<link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Montserrat');
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+	</style>
+</head>
+
+<body>
+	<button class="homebtn" onclick="javascript:window.location.href='home.html';"><i class="fa fa-home"></i></button>
+	<header id="header">
+			<div id="logo" class="pull-left">
+				<h1><a href="home.html" class="scrollto">WaitLess</a></h1>
+			</div>
+	</header><!-- #header -->
+
+	<section id="intro">
+		<div class="intro-text">
+				<h1 align="center"> Favorite Restaurants</h1>
+		</div>
+	</section>
+
+	<!---------------------------------------------------------->
+
+			<div style="text-align: left;" class="current">
+				<!-- remember to put Handlebars templates within script tags so that the
+				webpage doesn't attempt to load them as HTML -->
+				<script id="entry-template" type="text/x-handlebars-template" src="js/lab4.js">
+					<tr>
+						<td>
+							<span onclick="javascript:window.location.href='p3.html';
+							localStorage.setItem('rstrName', complexData[{{index}}-1].title);">
+								<span id="time"> &nbsp&nbsp&nbsp{{title}}</span>
+								<span id="wt">{{waitTime}}&nbsp min(s)</span>
+							</span>
+							<span style="color: #ff6868;"
+							onclick="javascript:this.style.color='#1dc8cd';
+							localStorage.removeItem(complexData[{{index}}-1].title);
+							window.location.href='favlist.html';"
+							id="{{index}}" class="fa buttonfav">&#xf004;</span>
+						</td>
+					</tr>
+
+				</script>
+
+				<div class="list">
+					<table id="FavoritesList" >
+					<!-- we will inject templated project HTML code into here -->
+					</table>
+				</div>
+				<button class="backbtn" onclick="console.log('clear');localStorage.clear();window.location.href='favlist.html';"> Clear List </button>
+			</div>
+
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/handlebars-v4.0.12.js"></script>
+		<script src="js/lab4.js"></script>
+
+		<!-- JavaScript Libraries -->
+		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/jquery/jquery-migrate.min.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="lib/easing/easing.min.js"></script>
+		<script src="lib/wow/wow.min.js"></script>
+		<script src="lib/superfish/hoverIntent.js"></script>
+		<script src="lib/superfish/superfish.min.js"></script>
+		<script src="lib/magnific-popup/magnific-popup.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+	</html>
+>>>>>>> 2189b6a04abf3bca64cf826195f199a931bd50bf
