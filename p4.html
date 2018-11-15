@@ -88,22 +88,22 @@
 				<!-- remember to put Handlebars templates within script tags so that the
 				webpage doesn't attempt to load them as HTML -->
 				<script id="entry-template" type="text/x-handlebars-template">
-
 					<tr>
 						<td>
-							<span onclick="javascript:window.location.href='p3.html';">
-								<span id="time"> {{ranking}}.&nbsp&nbsp{{title}}</span>
+							<span onclick="javascript:localStorage.setItem('rstrName', '{{title}}');
+							window.location.href='p3.html';">
+								<span id="time">{{ranking}}.&nbsp&nbsp{{title}}</span>
 								<span id="wt">{{waitTime}}&nbspmin(s)</span>
 							</span>
-							<span
+
+							<span onload="javascript:this.style.color=localStorage.getItem({{index}});"
 							onclick="javascript:
 							localStorage.setItem('{{title}}',
 							JSON.stringify(complexData[{{ranking}}-1]));
 							localStorage.setItem({{index}},
 							'#ff6868');
 							this.style.color='#ff6868';"
-							id="{{index}}" class="fa buttonfav">&#xf004;
-						</span>
+							id="{{index}}" class="fa buttonfav">&#xf004;</span>
 						</td>
 					</tr>
 
@@ -117,7 +117,7 @@
 
 			</div>
 		</div>
-	</div>
+
 
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="js/handlebars-v4.0.12.js"></script>
