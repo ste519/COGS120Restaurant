@@ -94,8 +94,8 @@
 				<script id="entry-template" type="text/x-handlebars-template">
 					<tr>
 						<td>
-							<span onclick="javascript:window.location.href='p3.html';
-							localStorage.setItem('rstrName', '{{title}}');">
+							<span onclick="javascript:localStorage.setItem('rstrName', '{{title}}');
+							window.location.href='p3.html';">
 								<span id="time">{{ranking}}.&nbsp&nbsp{{title}}</span>
 								<span id="wt">{{waitTime}}&nbspmin(s)</span>
 							</span>
@@ -124,7 +124,6 @@
 
 
 		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 		<script src="js/handlebars-v4.0.12.js"></script>
 		<script src="js/lab4.js"></script>
 		<script src="js/TimeDropdown.js"></script>
