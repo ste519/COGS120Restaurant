@@ -7,11 +7,7 @@ body {
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
-<<<<<<< HEAD
 	background-attachment:fixed;
-=======
-	position: fixed;
->>>>>>> fe8896b627504687d83914e57c2683374954e3f0
 }
 
 @-webkit-keyframes Gradient {
