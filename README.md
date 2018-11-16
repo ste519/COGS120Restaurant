@@ -1,1 +1,1 @@
-# COGS120Restaurant
+# COGS120 Team WJQ : WaitLess
