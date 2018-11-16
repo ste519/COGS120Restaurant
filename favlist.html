@@ -42,13 +42,13 @@
 					<tr>
 						<td>
 							<span onclick="javascript:window.location.href='p3.html';
-							localStorage.setItem('rstrName', '{{title}}');">
+							localStorage.setItem('rstrName', complexData[{{index}}-1].title);">
 								<span id="time"> &nbsp&nbsp&nbsp{{title}}</span>
 								<span id="wt">{{waitTime}}&nbsp min(s)</span>
 							</span>
 							<span style="color: #ff6868;"
 							onclick="javascript:this.style.color='#1dc8cd';
-							localStorage.removeItem('{{title}}');
+							localStorage.removeItem(complexData[{{index}}-1].title);
 							localStorage.removeItem({{index}});
 							window.location.href='favlist.html';"
 							id="{{index}}" class="fa buttonfav">&#xf004;</span>
@@ -67,6 +67,7 @@
 
 
 		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<script src="js/handlebars-v4.0.12.js"></script>
 		<script src="js/lab4.js"></script>
 
