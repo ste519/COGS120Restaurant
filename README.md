@@ -1,1 +1,1 @@
-# COGS120 Team WJQ : WaitLess
+# COGS120 Team WJQ : Waitless
