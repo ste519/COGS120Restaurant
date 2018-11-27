@@ -101,11 +101,20 @@
 
 							<span onload="javascript:this.style.color=localStorage.getItem({{index}});"
 							onclick="javascript:
-							localStorage.setItem('{{title}}',
-							JSON.stringify(complexData[{{ranking}}-1]));
-							localStorage.setItem({{index}},
-							'#ff6868');
-							this.style.color='#ff6868';"
+							if(!localStorage.getItem('{{title}}'))
+							{
+								localStorage.setItem('{{title}}',
+								JSON.stringify(complexData[{{ranking}}-1]));
+								localStorage.setItem({{index}},
+								'#ff6868');
+								this.style.color='#ff6868';
+							}
+							else{
+								localStorage.removeItem('{{title}}');
+								localStorage.removeItem({{index}});
+								this.style.color='#1dc8cd';
+							}"
+
 							id="{{index}}" class="fa buttonfav">&#xf004;</span>
 						</td>
 					</tr>
