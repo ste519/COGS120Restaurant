@@ -336,7 +336,7 @@ height: 8%;
 
 .alltime tr{
 	background: transparent;
-	font-size: 20px;
+	font-size: 18px;
 	height: 5vh;
 }
 
@@ -346,7 +346,7 @@ height: 8%;
 }
 
 .alltime span,.current span{
-  color: #1dc8cd;
+  color: #17acb1;
 }
 
 #FavoritesList{
