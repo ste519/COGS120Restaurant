@@ -29,7 +29,7 @@
 
 	<section id="intro">
 		<div class="intro-text">
-				<h1 align="center"> Wait Times @ <span id="selectedT"></span></h1>
+				<h2 align="center">Estimated Wait Times <br> @ <span id="selectedT"></span></h2>
 		</div>
 	</section>
 
@@ -37,7 +37,7 @@
 		document.getElementById("selectedT").innerHTML = localStorage.getItem("selectedT");
 	</script>
 
-	<div class="container" id="crwtTable">
+	<div class="container ewtTable" id="ewtTime">
 		<button align="center" onclick="window.location.href='current.html'" class="current-btn" type="submit" ><i class="fa fa-clock-o"></i>&nbsp;Current</button>
 		<div class="dropdown">
 			<button align="center" onclick="myFunction()" class="dropbtn" ><i class="fa fa-chevron-circle-down"></i>&nbsp;Time......</button>
@@ -92,7 +92,7 @@
 						<td>
 							<span onclick="javascript:localStorage.setItem('rstrName', '{{title}}');
 							window.location.href='p3.html';">
-								<span id="time">{{ranking}}.&nbsp&nbsp{{title}}</span>
+								<span id="time">&nbsp&nbsp{{ranking}}.&nbsp&nbsp{{title}}</span>
 								<span id="wt">{{waitTime}}&nbspmin(s)</span>
 							</span>
 
@@ -116,7 +116,7 @@
 
 				</script>
 
-				<div class="list">
+				<div class="list" id="ewtDiv">
 					<table id="templatedProjects" >
 					<!-- we will inject templated project HTML code into here -->
 					</table>

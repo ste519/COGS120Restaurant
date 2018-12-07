@@ -27,8 +27,8 @@
   </header><!-- #header -->
 
   <section id="intro">
-    <div class="intro-text">
-        <h1 align="center"> Wait Times For <br><span id="rstrName"></span></h1>
+    <div class="intro-text" >
+        <h2 align="center">Estimated Wait Times <br> For <span id="rstrName"></span></h2>
     </div>
   </section>
 
@@ -42,9 +42,9 @@
 			<script id="entry-template" type="text/x-handlebars-template">
 				<tr>
 					<td>
-            <span id='time' style="letter-spacing: 3px;">
-            &nbsp&nbsp {{time}}&nbsp&nbsp:</span>
-            <span id='wt' style="letter-spacing: 2px;">{{waitTime}} min(s) &nbsp</span>
+            <span id='time' style="letter-spacing: 1px;">
+            &nbsp@ {{time}}&nbsp&nbsp:</span>
+            <span id='wt' style="letter-spacing: 1px;">{{waitTime}} min(s) &nbsp</span>
           </td>
 				</tr>
 			</script>
